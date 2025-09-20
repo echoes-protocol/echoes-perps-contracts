@@ -89,6 +89,8 @@ interface IMultiAccount {
         address indexed account,
         address indexed unpausedBy
     );
+    event DepositsPaused(address indexed account, address indexed pausedBy);
+    event DepositsUnpaused(address indexed account, address indexed unpausedBy);
 
     function owners(address account) external view returns (address);
 
