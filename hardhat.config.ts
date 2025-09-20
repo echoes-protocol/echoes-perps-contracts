@@ -170,7 +170,7 @@ const config: HardhatUserConfig = {
         network: "base",
         chainId: 8453,
         urls: {
-          apiURL: `https://api.basescan.org/api`,
+          apiURL: `https://api.etherscan.io/v2/api?chainid=8453`,
           browserURL: "https://basescan.org/",
         },
       },
@@ -182,6 +182,14 @@ const config: HardhatUserConfig = {
           browserURL: "https://sonicscan.org"
         }
       },
+      {
+        network: "mainnet",
+        chainId: 1,
+        urls: {
+          apiURL: "https://api.etherscan.io/v2/api?chainid=1",
+          browserURL: "https://etherscan.io/"
+        }
+      }
     ],
   },
   namedAccounts: {
