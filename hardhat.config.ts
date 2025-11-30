@@ -178,7 +178,7 @@ const config: HardhatUserConfig = {
         network: "sonic",
         chainId: 146,
         urls: {
-          apiURL: "https://api.sonicscan.org/api",
+          apiURL: "https://api.etherscan.io/v2/api?chainid=146",
           browserURL: "https://sonicscan.org"
         }
       },
